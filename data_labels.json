@@ -1,485 +1,82 @@
 {
-    "Academy Manufactor": {
-        "cardname": "Academy Manufactor",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Arcane Signet": {
-        "cardname": "Arcane Signet",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Ashnod's Altar": {
-        "cardname": "Ashnod's Altar",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Assassin's Trophy": {
-        "cardname": "Assassin's Trophy",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Aurelia": {
-        "cardname": "Aurelia",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Azusa": {
-        "cardname": "Azusa",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Baleful Strix": {
-        "cardname": "Baleful Strix",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Blasphemous Act": {
-        "cardname": "Blasphemous Act",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Boros Charm": {
-        "cardname": "Boros Charm",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Chaos Warp": {
-        "cardname": "Chaos Warp",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Colossal Dreadmaw": {
-        "cardname": "Colossal Dreadmaw",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Command Tower": {
-        "cardname": "Command Tower",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Counterspell": {
+    "data/unprocessed/Counterspell.jpg": {
         "cardname": "Counterspell",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+        "path": "data/unprocessed/Counterspell.jpg"
     },
-    "Crop Rotation": {
-        "cardname": "Crop Rotation",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Academy-Manufactor.jpg": {
+        "cardname": "Academy-Manufactor",
+        "path": "data/unprocessed/Academy-Manufactor.jpg"
     },
-    "Crucible of Worlds": {
-        "cardname": "Crucible of Worlds",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Ashnod's-Altar.jpg": {
+        "cardname": "Ashnod's-Altar",
+        "path": "data/unprocessed/Ashnod's-Altar.jpg"
     },
-    "Cruel Tutor": {
-        "cardname": "Cruel Tutor",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Assassin's-Trophy.jpg": {
+        "cardname": "Assassin's-Trophy",
+        "path": "data/unprocessed/Assassin's-Trophy.jpg"
     },
-    "Dig Through Time": {
-        "cardname": "Dig Through Time",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Baleful-Strix.jpg": {
+        "cardname": "Baleful-Strix",
+        "path": "data/unprocessed/Baleful-Strix.jpg"
     },
-    "Doubling Season": {
-        "cardname": "Doubling Season",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Blasphemous-Act.jpg": {
+        "cardname": "Blasphemous-Act",
+        "path": "data/unprocessed/Blasphemous-Act.jpg"
     },
-    "Eslpeth": {
-        "cardname": "Eslpeth",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Boros-Charm.jpg": {
+        "cardname": "Boros-Charm",
+        "path": "data/unprocessed/Boros-Charm.jpg"
     },
-    "Etali, Primal Storm": {
-        "cardname": "Etali, Primal Storm",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Chaos-Warp.jpg": {
+        "cardname": "Chaos-Warp",
+        "path": "data/unprocessed/Chaos-Warp.jpg"
     },
-    "Evolving Wilds": {
-        "cardname": "Evolving Wilds",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Colossal-Dreadmaw.jpg": {
+        "cardname": "Colossal-Dreadmaw",
+        "path": "data/unprocessed/Colossal-Dreadmaw.jpg"
     },
-    "Farseek": {
-        "cardname": "Farseek",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Command-Tower.jpg": {
+        "cardname": "Command-Tower",
+        "path": "data/unprocessed/Command-Tower.jpg"
     },
-    "Full Throttle": {
-        "cardname": "Full Throttle",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Crop-Rotation.jpg": {
+        "cardname": "Crop-Rotation",
+        "path": "data/unprocessed/Crop-Rotation.jpg"
     },
-    "Generous Gift": {
-        "cardname": "Generous Gift",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Crucible-of-Worlds.jpg": {
+        "cardname": "Crucible-of-Worlds",
+        "path": "data/unprocessed/Crucible-of-Worlds.jpg"
     },
-    "Ghalta": {
-        "cardname": "Ghalta",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Cruel-Tutor.jpg": {
+        "cardname": "Cruel-Tutor",
+        "path": "data/unprocessed/Cruel-Tutor.jpg"
     },
-    "Giada": {
-        "cardname": "Giada",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Dig-Through-Time.jpg": {
+        "cardname": "Dig-Through-Time",
+        "path": "data/unprocessed/Dig-Through-Time.jpg"
     },
-    "Gitrog Monster": {
-        "cardname": "Gitrog Monster",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Doubling-Season.jpg": {
+        "cardname": "Doubling-Season",
+        "path": "data/unprocessed/Doubling-Season.jpg"
     },
-    "Great Hall of the Citadel": {
-        "cardname": "Great Hall of the Citadel",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Etali,-Primal-Storm.jpg": {
+        "cardname": "Etali,-Primal-Storm",
+        "path": "data/unprocessed/Etali,-Primal-Storm.jpg"
     },
-    "Gush": {
-        "cardname": "Gush",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Arcane-signet.jpg": {
+        "cardname": "Arcane-signet",
+        "path": "data/unprocessed/Arcane-signet.jpg"
     },
-    "Hullbreaker Horror": {
-        "cardname": "Hullbreaker Horror",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Aurelia,-the-warleader.jpg": {
+        "cardname": "Aurelia,-the-warleader",
+        "path": "data/unprocessed/Aurelia,-the-warleader.jpg"
     },
-    "Impact Tremors": {
-        "cardname": "Impact Tremors",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Azusa-lost-but-seeking.jpg": {
+        "cardname": "Azusa-lost-but-seeking",
+        "path": "data/unprocessed/Azusa-lost-but-seeking.jpg"
     },
-    "Lantern of Insight": {
-        "cardname": "Lantern of Insight",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Laughing Jasper Flint": {
-        "cardname": "Laughing Jasper Flint",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Loot": {
-        "cardname": "Loot",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Lotus Cobra": {
-        "cardname": "Lotus Cobra",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Lyra Dawnbringer": {
-        "cardname": "Lyra Dawnbringer",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Mana Geyser": {
-        "cardname": "Mana Geyser",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Mishra's Bauble": {
-        "cardname": "Mishra's Bauble",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Mystical Tutor": {
-        "cardname": "Mystical Tutor",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Nautiloid Ship": {
-        "cardname": "Nautiloid Ship",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Notion Thief": {
-        "cardname": "Notion Thief",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Opt": {
-        "cardname": "Opt",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Oracle of Mul Daya": {
-        "cardname": "Oracle of Mul Daya",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Path to Exile": {
-        "cardname": "Path to Exile",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Pull from Tomorrow": {
-        "cardname": "Pull from Tomorrow",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Rampaging Baloths": {
-        "cardname": "Rampaging Baloths",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Relinquary Tower": {
-        "cardname": "Relinquary Tower",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Rhystic Study": {
-        "cardname": "Rhystic Study",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Rograkh": {
-        "cardname": "Rograkh",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Ruby Daring Tracker": {
-        "cardname": "Ruby Daring Tracker",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Scute Swarm": {
-        "cardname": "Scute Swarm",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Seismic Sense": {
-        "cardname": "Seismic Sense",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Skullclamp": {
-        "cardname": "Skullclamp",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Sol Ring": {
-        "cardname": "Sol Ring",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Solemn Simulacrum": {
-        "cardname": "Solemn Simulacrum",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Strip Mine": {
-        "cardname": "Strip Mine",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Swords to Plowshares": {
-        "cardname": "Swords to Plowshares",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Telepathy": {
-        "cardname": "Telepathy",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Temple Garden": {
-        "cardname": "Temple Garden",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Thespian's Stage": {
-        "cardname": "Thespian's Stage",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Thran Dynamo": {
-        "cardname": "Thran Dynamo",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Underworld Breach": {
-        "cardname": "Underworld Breach",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Unexpectedd Windfall": {
-        "cardname": "Unexpectedd Windfall",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Westvale Abbey": {
-        "cardname": "Westvale Abbey",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Windswept Heath": {
-        "cardname": "Windswept Heath",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Wojek Investigator": {
-        "cardname": "Wojek Investigator",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Wylie Duke": {
-        "cardname": "Wylie Duke",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Youthful Valkyrie": {
-        "cardname": "Youthful Valkyrie",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
-    },
-    "Zacama Primal Calamity": {
-        "cardname": "Zacama Primal Calamity",
-        "print": "",
-        "cardtype": "",
-        "color": "",
-        "mana_cost": ""
+    "data/unprocessed/Eslpeth-storm-slayer.jpg": {
+        "cardname": "Eslpeth-storm-slayer",
+        "path": "data/unprocessed/Eslpeth-storm-slayer.jpg"
     }
 }
