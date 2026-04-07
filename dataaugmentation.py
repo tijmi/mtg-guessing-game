@@ -5,10 +5,19 @@ from PIL import Image, ImageOps, ImageEnhance, ImageFilter
 
 
 class DataAugmentation:
-    def __init__(self, input_dir="Data/Unprocessed", output_dir="Data/Processed", versions=10):
+    def __init__(
+        self,
+        input_dir="Data/Unprocessed",
+        output_dir="Data/Processed",
+        versions=3,
+        output_ratio=(5, 7),
+        output_scale=2,
+    ):
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
         self.versions = versions
+        self.output_ratio = output_ratio
+        self.output_scale = output_scale
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def augment_all(self):
@@ -21,6 +30,12 @@ class DataAugmentation:
         card_folder.mkdir(parents=True, exist_ok=True)
 
         with Image.open(image_path).convert("RGB") as img:
+            img = self._crop_to_ratio(img, self.output_ratio)
+            img = img.resize(
+                (self.output_ratio[0] * self.output_scale, self.output_ratio[1] * self.output_scale),
+                Image.Resampling.LANCZOS,
+            )
+
             for version in range(1, self.versions + 1):
                 augmented = self._make_augmented_version(img)
                 out_path = card_folder / f"{name}_{version}.jpg"
@@ -29,7 +44,7 @@ class DataAugmentation:
     def _make_augmented_version(self, image):
         img = image.copy()
 
-        # put the zaza image modifier functions here
+        # add more mods here
         ops = [
             lambda im: im.rotate(random.choice([0, 90, 180, 270]), expand=True),
             lambda im: ImageOps.mirror(im),
@@ -38,28 +53,37 @@ class DataAugmentation:
             lambda im: ImageEnhance.Color(im).enhance(random.uniform(0.7, 1.3)),
             lambda im: ImageEnhance.Contrast(im).enhance(random.uniform(0.8, 1.2)),
             lambda im: im.filter(ImageFilter.GaussianBlur(radius=random.uniform(0, 1.5))),
-            #lambda im: self._random_crop_and_resize(im),
+            lambda im: im.filter(ImageFilter.GaussianBlur(radius=random.uniform(0, 1.5))),
         ]
 
-        for op in random.sample(ops, 3): # applies 3 modifiers from the ops functions
+        for op in random.sample(ops, 3): # change the 3 to the amount of mods you want
             img = op(img)
 
         return img
 
-    def _random_crop_and_resize(self, image):
-        if random.random() < 0.5:
+    def _crop_to_ratio(self, image, ratio):
+        target_w, target_h = ratio
+        if target_w <= 0 or target_h <= 0:
             return image
+
         width, height = image.size
-        crop_w = random.randint(int(width * 0.9), width)
-        crop_h = random.randint(int(height * 0.9), height)
-        left = random.randint(0, width - crop_w)
-        top = random.randint(0, height - crop_h)
-        cropped = image.crop((left, top, left + crop_w, top + crop_h))
-        return cropped.resize((width, height), Image.Resampling.LANCZOS)
+        target_ratio = target_w / target_h
+        current_ratio = width / height
+
+        if current_ratio > target_ratio:
+            new_width = int(target_ratio * height)
+            left = (width - new_width) // 2
+            box = (left, 0, left + new_width, height)
+        else:
+            new_height = int(width / target_ratio)
+            top = (height - new_height) // 2
+            box = (0, top, width, top + new_height)
+
+        return image.crop(box)
 
     def _sanitize_name(self, name):
         return "".join(c for c in name if c not in '<>:"/\\|?*').strip()
 
 
 if __name__ == "__main__":
-    DataAugmentation().augment_all()
+    DataAugmentation(output_ratio=(16, 9), output_scale=32).augment_all()
