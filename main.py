@@ -7,15 +7,34 @@ class game:
         self.game = Game(1920, 1080)
     
     def start_round(self):
-        game.new_round("some_filepath.jpg")
+        self.game.new_round(r"C:\Users\cagla\Downloads\mtg-guessing-game\6ed-260-uktabi-orangutan.jpg", "so2", "easy")
 
     def run(self):
         running = True
         while running:
-            self.game.clear()
-            self.game.time = pygame.time.get_ticks()/1000
-            self.game.update()
-            self.game.draw_time()
+            if self.game.state == 2:
+                for event in pygame.event.get():
+                    if event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE:
+                        running = False
+                        pygame.display.quit()
+                    if event.type == pygame.MOUSEBUTTONUP:
+                        self.game.button_checker()
+                #self.game.time = pygame.time.get_ticks()/1000
+                self.game.update_menu()
+                #self.game.draw_time()
+                pygame.display.flip()
+            elif self.game.state == 1:
+                for event in pygame.event.get():
+                    if event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE:
+                        running = False
+                        pygame.display.quit()
+                    if event.type == pygame.KEYUP and event.key == pygame.K_m:
+                        self.game.state = 2
+                    self.game.text_input.handle_event(event)
+                self.game.time = pygame.time.get_ticks()/1000 - self.game.start_time
+                self.game.update()
+                self.game.draw_time()
+                pygame.display.flip()
 
 
 
@@ -30,4 +49,5 @@ if __name__ == "__main__":
             continue
         if mode == 1:
             game_instance = game()
+            game_instance.start_round()
             game_instance.run()
