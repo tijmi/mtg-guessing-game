@@ -134,6 +134,13 @@ class dataimport:
             json.dump(data, f, indent=4)
             f.truncate()
             
+    def newdata(self):
+        self.crop_images()
+        self.scale_images()
+        self.label_data()
+        self.augementor = dataaugmentation.DataAugmentation(data_labels_path=self.json_path, output_dir="data/processed_images")
+        self.augementor.augment_data()
+        
 
 if __name__ == "__main__":
     data_path = "data/unprocessed"
