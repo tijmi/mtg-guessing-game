@@ -72,3 +72,4 @@ Thumbs.db
 *.local
 *.png
 *.jpg
+data_labels.json

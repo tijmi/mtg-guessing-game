@@ -1,82 +1,128 @@
 {
-    "data/unprocessed/Counterspell.jpg": {
-        "cardname": "Counterspell",
-        "path": "data/unprocessed/Counterspell.jpg"
-    },
     "data/unprocessed/Academy-Manufactor.jpg": {
-        "cardname": "Academy-Manufactor",
-        "path": "data/unprocessed/Academy-Manufactor.jpg"
+        "cardname": "Academy Manufactor",
+        "path": "data/unprocessed/Academy-Manufactor.jpg",
+        "set": "moc",
+        "scryfall_image": "data/scryfall_images/academy_manufactor_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Academy-Manufactor.jpg_saturated_1.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_2.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_3.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_4.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_5.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_6.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_7.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_8.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_9.png",
+            "data/processed_images/Academy-Manufactor.jpg_saturated_10.png"
+        ]
     },
     "data/unprocessed/Ashnod's-Altar.jpg": {
-        "cardname": "Ashnod's-Altar",
-        "path": "data/unprocessed/Ashnod's-Altar.jpg"
+        "cardname": "Ashnod's Altar",
+        "path": "data/unprocessed/Ashnod's-Altar.jpg",
+        "set": "brr",
+        "scryfall_image": "data/scryfall_images/ashnod's_altar_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_1.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_2.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_3.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_4.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_5.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_6.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_7.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_8.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_9.png",
+            "data/processed_images/Ashnod's-Altar.jpg_saturated_10.png"
+        ]
     },
     "data/unprocessed/Assassin's-Trophy.jpg": {
-        "cardname": "Assassin's-Trophy",
-        "path": "data/unprocessed/Assassin's-Trophy.jpg"
-    },
-    "data/unprocessed/Baleful-Strix.jpg": {
-        "cardname": "Baleful-Strix",
-        "path": "data/unprocessed/Baleful-Strix.jpg"
-    },
-    "data/unprocessed/Blasphemous-Act.jpg": {
-        "cardname": "Blasphemous-Act",
-        "path": "data/unprocessed/Blasphemous-Act.jpg"
-    },
-    "data/unprocessed/Boros-Charm.jpg": {
-        "cardname": "Boros-Charm",
-        "path": "data/unprocessed/Boros-Charm.jpg"
-    },
-    "data/unprocessed/Chaos-Warp.jpg": {
-        "cardname": "Chaos-Warp",
-        "path": "data/unprocessed/Chaos-Warp.jpg"
-    },
-    "data/unprocessed/Colossal-Dreadmaw.jpg": {
-        "cardname": "Colossal-Dreadmaw",
-        "path": "data/unprocessed/Colossal-Dreadmaw.jpg"
-    },
-    "data/unprocessed/Command-Tower.jpg": {
-        "cardname": "Command-Tower",
-        "path": "data/unprocessed/Command-Tower.jpg"
-    },
-    "data/unprocessed/Crop-Rotation.jpg": {
-        "cardname": "Crop-Rotation",
-        "path": "data/unprocessed/Crop-Rotation.jpg"
-    },
-    "data/unprocessed/Crucible-of-Worlds.jpg": {
-        "cardname": "Crucible-of-Worlds",
-        "path": "data/unprocessed/Crucible-of-Worlds.jpg"
-    },
-    "data/unprocessed/Cruel-Tutor.jpg": {
-        "cardname": "Cruel-Tutor",
-        "path": "data/unprocessed/Cruel-Tutor.jpg"
-    },
-    "data/unprocessed/Dig-Through-Time.jpg": {
-        "cardname": "Dig-Through-Time",
-        "path": "data/unprocessed/Dig-Through-Time.jpg"
-    },
-    "data/unprocessed/Doubling-Season.jpg": {
-        "cardname": "Doubling-Season",
-        "path": "data/unprocessed/Doubling-Season.jpg"
-    },
-    "data/unprocessed/Etali,-Primal-Storm.jpg": {
-        "cardname": "Etali,-Primal-Storm",
-        "path": "data/unprocessed/Etali,-Primal-Storm.jpg"
+        "cardname": "Assassin's Trophy",
+        "path": "data/unprocessed/Assassin's-Trophy.jpg",
+        "set": "2x2",
+        "scryfall_image": "data/scryfall_images/assassin's_trophy_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_1.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_2.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_3.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_4.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_5.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_6.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_7.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_8.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_9.png",
+            "data/processed_images/Assassin's-Trophy.jpg_saturated_10.png"
+        ]
     },
     "data/unprocessed/Arcane-signet.jpg": {
-        "cardname": "Arcane-signet",
-        "path": "data/unprocessed/Arcane-signet.jpg"
+        "cardname": "Arcane signet",
+        "path": "data/unprocessed/Arcane-signet.jpg",
+        "set": "dmc",
+        "scryfall_image": "data/scryfall_images/arcane_signet_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Arcane-signet.jpg_saturated_1.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_2.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_3.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_4.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_5.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_6.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_7.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_8.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_9.png",
+            "data/processed_images/Arcane-signet.jpg_saturated_10.png"
+        ]
     },
     "data/unprocessed/Aurelia,-the-warleader.jpg": {
-        "cardname": "Aurelia,-the-warleader",
-        "path": "data/unprocessed/Aurelia,-the-warleader.jpg"
+        "cardname": "Aurelia, the warleader",
+        "path": "data/unprocessed/Aurelia,-the-warleader.jpg",
+        "set": "fdn",
+        "scryfall_image": "data/scryfall_images/aurelia,_the_warleader_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_1.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_2.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_3.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_4.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_5.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_6.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_7.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_8.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_9.png",
+            "data/processed_images/Aurelia,-the-warleader.jpg_saturated_10.png"
+        ]
     },
     "data/unprocessed/Azusa-lost-but-seeking.jpg": {
-        "cardname": "Azusa-lost-but-seeking",
-        "path": "data/unprocessed/Azusa-lost-but-seeking.jpg"
+        "cardname": "Azusa lost but seeking",
+        "path": "data/unprocessed/Azusa-lost-but-seeking.jpg",
+        "set": "cmm",
+        "scryfall_image": "data/scryfall_images/azusa_lost_but_seeking_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_1.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_2.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_3.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_4.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_5.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_6.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_7.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_8.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_9.png",
+            "data/processed_images/Azusa-lost-but-seeking.jpg_saturated_10.png"
+        ]
     },
-    "data/unprocessed/Eslpeth-storm-slayer.jpg": {
-        "cardname": "Eslpeth-storm-slayer",
-        "path": "data/unprocessed/Eslpeth-storm-slayer.jpg"
+    "data/unprocessed/Baleful-Strix.jpg": {
+        "cardname": "Baleful Strix",
+        "path": "data/unprocessed/Baleful-Strix.jpg",
+        "set": "afc",
+        "scryfall_image": "data/scryfall_images/baleful_strix_scryfall.png",
+        "augmented_images": [
+            "data/processed_images/Baleful-Strix.jpg_saturated_1.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_2.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_3.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_4.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_5.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_6.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_7.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_8.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_9.png",
+            "data/processed_images/Baleful-Strix.jpg_saturated_10.png"
+        ]
     }
 }
