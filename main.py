@@ -1,5 +1,8 @@
 from game import Game
 import pygame
+import importdata
+import trainai
+
 
 class game:
     def __init__(self):
@@ -51,3 +54,10 @@ if __name__ == "__main__":
             game_instance = game()
             game_instance.start_round()
             game_instance.run()
+        elif mode == 2:
+            trainer_instance = trainai.trainer()
+            trainer_instance.preparedata()
+            trainer_instance.trainmodel()
+        elif mode == 3:
+            data_importer = importdata.dataimport()
+            data_importer.newdata()
