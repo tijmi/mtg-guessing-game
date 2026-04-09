@@ -6,7 +6,6 @@ import requests
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import cv2
-import dataaugmentation
 
 class dataimport:
     def __init__(self,data_path: str = "data/unprocessed",json_path: str = "data_labels.json"):
@@ -55,23 +54,12 @@ class dataimport:
                 cropped = image[top:top + self.min_height, left:left + self.min_width]
                 cv2.imwrite(image_path, cropped)  # overwrite original file in its own folder
                         
-    def scale_images(self):
-        target_width, target_height = int(self.min_width/8), int(self.min_height/8)
-        for root, dirs, files in os.walk(self.data_path):
-            for file in tqdm(files, desc="Scaling images", unit="img"):
-                image_path = os.path.join(root, file)
-                image = cv2.imread(image_path)
-                if image is None:
-                    continue
-
-                scaled = cv2.resize(image, (target_width, target_height), interpolation=cv2.INTER_AREA)
-                cv2.imwrite(image_path, scaled)  # overwrite original file in its own folder
     
     def fetch_scryfall_image(self,imagepath:str):
         print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
         params = {
             "fuzzy": self.datainfo[imagepath]["cardname"],
-            "format": "large",
+            "format": "image",
             "version": "art_crop",
         }
         
@@ -136,9 +124,15 @@ class dataimport:
             if fig is not None:
                 plt.close(fig)
             plt.ioff()
-        with open(self.json_path, 'w') as f:
-            json.dump(self.datainfo, f, indent=4)
-        
+                        
+        with open(self.json_path, 'r+') as f:
+            data = json.load(f)
+            if not isinstance(data, dict):
+                raise ValueError("data_labels.json must contain a JSON object.")
+            data.update(self.datainfo)
+            f.seek(0)
+            json.dump(data, f, indent=4)
+            f.truncate()
             
     def newdata(self):
         self.crop_images()
