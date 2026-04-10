@@ -73,3 +73,5 @@ Thumbs.db
 *.png
 *.jpg
 data_labels.json
+*.keras
+*.zip
