@@ -13,13 +13,25 @@ class dataimport:
         self.data_path = data_path
         self.json_path = json_path
         self.min_width, self.min_height = float("inf"), float("inf")
-        self.datainfo = {}
         self.HEADERS = {
             "User-Agent": "MTGGUESSINGGAME-1.0",
             "Accept": "application/json",
         }
         self.BASE_URL = "https://api.scryfall.com"
+        with open(self.json_path, 'r') as f:
+            self.datainfo = json.load(f)
         
+    def scale_images(self):
+        target_width, target_height = 256, self.min_height * 256 // self.min_width
+        for root, dirs, files in os.walk(self.data_path):
+            for file in tqdm(files, desc="Scaling images", unit="img"):
+                image_path = os.path.join(root, file)
+                image = cv2.imread(image_path)
+                if image is None:
+                    continue
+
+                scaled = cv2.resize(image, (target_width, target_height), interpolation=cv2.INTER_AREA)
+                cv2.imwrite(image_path, scaled)  # overwrite original file in its own folder
     
     def crop_images(self):
         self.min_width, self.min_height = float("inf"), float("inf")
@@ -67,12 +79,12 @@ class dataimport:
                 scaled = cv2.resize(image, (target_width, target_height), interpolation=cv2.INTER_AREA)
                 cv2.imwrite(image_path, scaled)  # overwrite original file in its own folder
     
-    def fetch_scryfall_image(self,imagepath:str):
+    def fetch_scryfall_image(self,imagepath:str,version:str = "art_crop"):
         print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
         params = {
             "fuzzy": self.datainfo[imagepath]["cardname"],
             "format": "image",
-            "version": "art_crop",
+            "version": version,
         }
         
         if self.datainfo[imagepath]["set"]:
@@ -93,7 +105,10 @@ class dataimport:
         with open(filepath, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
-        self.datainfo[imagepath]["scryfall_image"] = filepath
+        try:
+            self.datainfo[imagepath]["scryfall_image"].append(filepath)
+        except:
+            self.datainfo[imagepath]["scryfall_image"] = [filepath]
         print(f"Saved: {filepath}")
     
     def label_data(self):
@@ -106,30 +121,35 @@ class dataimport:
             for root, dirs, files in os.walk(self.data_path):
                     for file in tqdm(files, desc="Labeling images", unit="img"):
                         if file.endswith('.jpg') or file.endswith('.png'):
-                            image_path = os.path.join(root, file)
-
-                            if fig is None:
-                                fig, ax = plt.subplots()
-                                plt.show(block=False)
-
-                            image_data = mpimg.imread(image_path)
-                            ax.clear()
-                            ax.imshow(image_data)
-                            ax.axis("off")
-                            ax.set_title(file)
-                            fig.canvas.draw_idle()
-                            plt.pause(0.001)
-
-                            filename = Path(file)
-                            name = filename.with_suffix('')
-                            name = str(name).replace("-", " ")
                             new_filename = file.replace(" ", "-")
                             new_image_path = os.path.join(root, new_filename)
-                            if new_image_path != image_path:
-                                os.rename(image_path, new_image_path)
-                            set = input("Enter the set code for this card: ")
-                            self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
-                            self.fetch_scryfall_image(new_image_path)
+                            if  new_image_path in self.datainfo:
+                                new_image_path = self.datainfo[new_image_path]["path"]
+                            else:
+                                image_path = os.path.join(root, file)
+
+                                if fig is None:
+                                    fig, ax = plt.subplots()
+                                    plt.show(block=False)
+
+                                image_data = mpimg.imread(image_path)
+                                ax.clear()
+                                ax.imshow(image_data)
+                                ax.axis("off")
+                                ax.set_title(file)
+                                fig.canvas.draw_idle()
+                                plt.pause(0.001)
+
+                                filename = Path(file)
+                                name = filename.with_suffix('')
+                                name = str(name).replace("-", " ")
+                                
+                                if new_image_path != image_path:
+                                    os.rename(image_path, new_image_path)
+                                set = input("Enter the set code for this card: ")
+                                self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
+                            self.fetch_scryfall_image(new_image_path, version="art_crop")
+                            self.fetch_scryfall_image(new_image_path, version="normal")
                             
         finally:
             if fig is not None:

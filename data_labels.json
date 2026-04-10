@@ -1116,7 +1116,10 @@
         "cardname": "Assassin's Trophy",
         "path": "data/unprocessed/Assassin's-Trophy.jpg",
         "set": "2x2",
-        "scryfall_image": "data/scryfall_images/assassin's_trophy_scryfall.jpg",
+        "scryfall_image": [
+            "data/scryfall_images/assassin's_trophy_scryfall_art_crop.png",
+            "data/scryfall_images/assassin's_trophy_scryfall_normal.png"
+        ],
         "augmented_images": [
             "data/processed_images/Assassin's-Trophy.jpg_blurred_1.png",
             "data/processed_images/Assassin's-Trophy.jpg_blurred_2.png",
@@ -2594,6 +2597,15 @@
             "data/processed_images/Baleful-Strix.jpg_saturated_9.png_flipped2.png",
             "data/processed_images/Baleful-Strix.jpg_saturated_10.png_flipped1.png",
             "data/processed_images/Baleful-Strix.jpg_saturated_10.png_flipped2.png"
+        ]
+    },
+    "data/unprocessed/Aurelia-the-warleader.jpg": {
+        "cardname": "Aurelia the warleader",
+        "path": "data/unprocessed/Aurelia-the-warleader.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/aurelia_the_warleader_scryfall_art_crop.png",
+            "data/scryfall_images/aurelia_the_warleader_scryfall_normal.png"
         ]
     }
 }
