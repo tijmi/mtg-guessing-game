@@ -20,6 +20,7 @@ class Game:
         self.hard_button = self.Button(1200, 720, 250, 100, "Hard")
         self.text_input = self.InputBox(960, 200, 320, 44)
         self.state = 2
+        self.round_final_time = "0"
 
         #reminder to self to implement:
         # display image, display time elapsed
@@ -32,6 +33,9 @@ class Game:
         self.text_input.card_name = card_name
         self.text_input.active = True
         self.text_input.typed = False
+        self.text_input.round_over = False
+        self.text_input.flash_color_goal = pygame.Color('dodgerblue2')
+        self.text_input.color_active = pygame.Color('dodgerblue2')
         self.text_input.text = ""
         self.diff = difficulty
 
@@ -77,7 +81,11 @@ class Game:
 
     
     def draw_time(self):
-        text = self.fpsfont.render(str(round(self.time, 2)), True, pygame.Color("red"))
+        if not self.text_input.round_over:
+            text = self.fpsfont.render(str(round(self.time, 2)), True, pygame.Color("red"))
+            self.round_final_time = str(round(self.time, 2))
+        else:
+            text = self.fpsfont.render(self.round_final_time, True, pygame.Color("green"))
         self.screen.blit(text, (self.width/2 - 15, 150))
 
     class Button:
@@ -110,6 +118,8 @@ class Game:
             self.flash_color = (255, 0, 0)
             self.flash_color_goal = self.color_active
             self.wrong_guess = 0
+            self.truth_nuke = 0
+            self.round_over = False
 
         def handle_event(self, event):
             if event.type == pygame.MOUSEBUTTONDOWN:
@@ -125,6 +135,9 @@ class Game:
                     if event.key == pygame.K_RETURN:
                         if self.text == self.card_name:
                             print("yuno ball")
+                            self.truth_nuke = 100
+                            self.round_over = True
+                            self.active = False
                         else:
                             print("Hell na")
                             self.wrong_guess = 100
@@ -142,7 +155,7 @@ class Game:
             width = max(200, self.txt_surface.get_width()+10)
             self.rect.x = min(self.default_x, self.default_x - width/2)
             self.rect.w = width
-            if not self.active:
+            if not self.active and not self.round_over:
                 self.txt_surface = self.font.render("Click back to guess", True, pygame.Color('gray'))
 
         def lerp_color(self, color1, color2, t):
@@ -154,7 +167,15 @@ class Game:
             if not self.typed and self.active:
                 self.txt_surface = self.font.render("Type your guess now", True, self.color_active if self.active else self.color_inactive)
 
-            if self.wrong_guess > 0:
+            if self.truth_nuke > 0:
+                t = self.truth_nuke / 100.0
+                self.flash_color_goal = (0,255,80)
+                self.color_active = (0,255,80)
+                self.flash_color = self.lerp_color(self.flash_color_goal ,(0,255,155), t)
+                self.truth_nuke -= 1
+                current_time = pygame.time.get_ticks()
+                #shake_x = self.get_shake_offset(self.truth_nuke, 100, current_time)
+            elif self.wrong_guess > 0:
                 t = self.wrong_guess / 100.0
                 self.flash_color = self.lerp_color((255,0,0), self.flash_color_goal, t)
                 self.wrong_guess -= 2
@@ -167,9 +188,9 @@ class Game:
             rect.x += shake_x if self.wrong_guess > 0 else 0
             screen.blit(self.txt_surface, (rect.x+5, rect.y+4))
             # Blit the rect.
-            pygame.draw.rect(screen, self.flash_color if self.wrong_guess > 0 else (self.color_active if self.active else self.color_inactive), rect, 2)
+            pygame.draw.rect(screen, self.flash_color if self.wrong_guess > 0 or self.truth_nuke > 0 else (self.color_active if self.active else self.color_inactive), rect, 2)
 
-        def get_shake_offset(self, wrong_value, max_wrong, time_ms, amplitude=20, frequency=20):
+        def get_shake_offset(self, wrong_value, max_wrong, time_ms, amplitude=20, frequency=40):
             # Intensity increases as wrong_value decreases toward 0
             intensity = (wrong_value**1.5 / max_wrong**1.5) if max_wrong > 0 else 0
             # Sinusoidal shake: left/right oscillation
