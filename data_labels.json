@@ -1490,371 +1490,9 @@
         "cardname": "Aurelia the warleader",
         "path": "data/unprocessed/Aurelia-the-warleader.jpg",
         "set": "fdn",
-        "scryfall_image": "data/scryfall_images/aurelia_the_warleader_scryfall.jpg",
-        "augmented_images": [
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_3.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_4.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_5.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_6.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_7.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_8.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_9.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_10.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_1.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_2.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_3.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_4.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_5.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_6.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_7.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_8.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_9.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_blurred_10.png_saturated_10.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_1.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_1.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_2.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_2.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_3.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_3.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_4.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_4.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_5.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_5.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_6.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_6.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_7.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_7.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_8.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_8.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_9.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_9.png_flipped2.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_10.png_flipped1.png",
-            "data/processed_images/Aurelia-the-warleader.jpg_saturated_10.png_flipped2.png"
+        "scryfall_image": [
+            "data/scryfall_images/aurelia_the_warleader_scryfall_art_crop.png",
+            "data/scryfall_images/aurelia_the_warleader_scryfall_normal.png"
         ]
     },
     "data/unprocessed/Azusa-lost-but-seeking.jpg": {
@@ -2599,13 +2237,532 @@
             "data/processed_images/Baleful-Strix.jpg_saturated_10.png_flipped2.png"
         ]
     },
-    "data/unprocessed/Aurelia-the-warleader.jpg": {
-        "cardname": "Aurelia the warleader",
-        "path": "data/unprocessed/Aurelia-the-warleader.jpg",
+    "Data/Game\\Academy-Manufactor.jpg": {
+        "cardname": "Academy Manufactor",
+        "path": "Data/Game\\Academy-Manufactor.jpg",
+        "set": "otc",
+        "scryfall_image": [
+            "data/scryfall_images/academy_manufactor_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Arcane-Signet.jpg": {
+        "cardname": "Arcane Signet",
+        "path": "Data/Game\\Arcane-Signet.jpg",
+        "set": "otc",
+        "scryfall_image": [
+            "data/scryfall_images/arcane_signet_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Ashnod's-Altar.jpg": {
+        "cardname": "Ashnod's Altar",
+        "path": "Data/Game\\Ashnod's-Altar.jpg",
+        "set": "cmm",
+        "scryfall_image": [
+            "data/scryfall_images/ashnod's_altar_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Assassin's-Trophy.jpg": {
+        "cardname": "Assassin's Trophy",
+        "path": "Data/Game\\Assassin's-Trophy.jpg",
+        "set": "2x2",
+        "scryfall_image": [
+            "data/scryfall_images/assassin's_trophy_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Aurelia-the-Warleader.jpg": {
+        "cardname": "Aurelia the Warleader",
+        "path": "Data/Game\\Aurelia-the-Warleader.jpg",
         "set": "fdn",
         "scryfall_image": [
-            "data/scryfall_images/aurelia_the_warleader_scryfall_art_crop.png",
-            "data/scryfall_images/aurelia_the_warleader_scryfall_normal.png"
+            "data/scryfall_images/aurelia_the_warleader_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Azusa-lost-but-seeking.jpg": {
+        "cardname": "Azusa lost but seeking",
+        "path": "Data/Game\\Azusa-lost-but-seeking.jpg",
+        "set": "cmm",
+        "scryfall_image": [
+            "data/scryfall_images/azusa_lost_but_seeking_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Baleful-Strix.jpg": {
+        "cardname": "Baleful Strix",
+        "path": "Data/Game\\Baleful-Strix.jpg",
+        "set": "otc",
+        "scryfall_image": [
+            "data/scryfall_images/baleful_strix_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Blasphemous-Act.jpg": {
+        "cardname": "Blasphemous Act",
+        "path": "Data/Game\\Blasphemous-Act.jpg",
+        "set": "ecc",
+        "scryfall_image": [
+            "data/scryfall_images/blasphemous_act_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Boros-Charm.jpg": {
+        "cardname": "Boros Charm",
+        "path": "Data/Game\\Boros-Charm.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/boros_charm_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Chaos-Warp.jpg": {
+        "cardname": "Chaos Warp",
+        "path": "Data/Game\\Chaos-Warp.jpg",
+        "set": "soc",
+        "scryfall_image": [
+            "data/scryfall_images/chaos_warp_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Colossal-Dreadmaw.jpg": {
+        "cardname": "Colossal Dreadmaw",
+        "path": "Data/Game\\Colossal-Dreadmaw.jpg",
+        "set": "m21",
+        "scryfall_image": [
+            "data/scryfall_images/colossal_dreadmaw_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Command-Tower.jpg": {
+        "cardname": "Command Tower",
+        "path": "Data/Game\\Command-Tower.jpg",
+        "set": "cmr",
+        "scryfall_image": [
+            "data/scryfall_images/command_tower_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Counter-Spell.jpg": {
+        "cardname": "Counter Spell",
+        "path": "Data/Game\\Counter-Spell.jpg",
+        "set": "dmr",
+        "scryfall_image": [
+            "data/scryfall_images/counter_spell_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Crop-Rotation.jpg": {
+        "cardname": "Crop Rotation",
+        "path": "Data/Game\\Crop-Rotation.jpg",
+        "set": "dmr",
+        "scryfall_image": [
+            "data/scryfall_images/crop_rotation_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Crucible-of-Worlds.jpg": {
+        "cardname": "Crucible of Worlds",
+        "path": "Data/Game\\Crucible-of-Worlds.jpg",
+        "set": "m19",
+        "scryfall_image": [
+            "data/scryfall_images/crucible_of_worlds_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Dig-Through-Time.jpg": {
+        "cardname": "Dig Through Time",
+        "path": "Data/Game\\Dig-Through-Time.jpg",
+        "set": "soc",
+        "scryfall_image": [
+            "data/scryfall_images/dig_through_time_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Doubling-Season.jpg": {
+        "cardname": "Doubling Season",
+        "path": "Data/Game\\Doubling-Season.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/doubling_season_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Eslpeth-Storm-Slayer.jpg": {
+        "cardname": "Eslpeth Storm Slayer",
+        "path": "Data/Game\\Eslpeth-Storm-Slayer.jpg",
+        "set": "tdm",
+        "scryfall_image": [
+            "data/scryfall_images/eslpeth_storm_slayer_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Etali,-Primal-Storm.jpg": {
+        "cardname": "Etali, Primal Storm",
+        "path": "Data/Game\\Etali,-Primal-Storm.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/etali,_primal_storm_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Evolving-Wilds.jpg": {
+        "cardname": "Evolving Wilds",
+        "path": "Data/Game\\Evolving-Wilds.jpg",
+        "set": "bro",
+        "scryfall_image": [
+            "data/scryfall_images/evolving_wilds_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Farseek.jpg": {
+        "cardname": "Farseek",
+        "path": "Data/Game\\Farseek.jpg",
+        "set": "cmm",
+        "scryfall_image": [
+            "data/scryfall_images/farseek_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Full-Throttle.jpg": {
+        "cardname": "Full Throttle",
+        "path": "Data/Game\\Full-Throttle.jpg",
+        "set": "dft",
+        "scryfall_image": [
+            "data/scryfall_images/full_throttle_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Generous-Gift.jpg": {
+        "cardname": "Generous Gift",
+        "path": "Data/Game\\Generous-Gift.jpg",
+        "set": "woc",
+        "scryfall_image": [
+            "data/scryfall_images/generous_gift_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Ghalta-Primal-Hunger.jpg": {
+        "cardname": "Ghalta Primal Hunger",
+        "path": "Data/Game\\Ghalta-Primal-Hunger.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/ghalta_primal_hunger_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Great-Hall-of-the-Citadel.jpg": {
+        "cardname": "Great Hall of the Citadel",
+        "path": "Data/Game\\Great-Hall-of-the-Citadel.jpg",
+        "set": "ltr",
+        "scryfall_image": [
+            "data/scryfall_images/great_hall_of_the_citadel_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Gush.jpg": {
+        "cardname": "Gush",
+        "path": "Data/Game\\Gush.jpg",
+        "set": "dd2",
+        "scryfall_image": [
+            "data/scryfall_images/gush_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Hullbreaker-Horror.jpg": {
+        "cardname": "Hullbreaker Horror",
+        "path": "Data/Game\\Hullbreaker-Horror.jpg",
+        "set": "woc",
+        "scryfall_image": [
+            "data/scryfall_images/hullbreaker_horror_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Impact-Tremors.jpg": {
+        "cardname": "Impact Tremors",
+        "path": "Data/Game\\Impact-Tremors.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/impact_tremors_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Lantern-of-Insight.jpg": {
+        "cardname": "Lantern of Insight",
+        "path": "Data/Game\\Lantern-of-Insight.jpg",
+        "set": "5dn",
+        "scryfall_image": [
+            "data/scryfall_images/lantern_of_insight_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Laughing-Jasper-Flint.jpg": {
+        "cardname": "Laughing Jasper Flint",
+        "path": "Data/Game\\Laughing-Jasper-Flint.jpg",
+        "set": "otj",
+        "scryfall_image": [
+            "data/scryfall_images/laughing_jasper_flint_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Loot-Exuberant-Explorer.jpg": {
+        "cardname": "Loot Exuberant Explorer",
+        "path": "Data/Game\\Loot-Exuberant-Explorer.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/loot_exuberant_explorer_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Lotus-Cobra.jpg": {
+        "cardname": "Lotus Cobra",
+        "path": "Data/Game\\Lotus-Cobra.jpg",
+        "set": "blc",
+        "scryfall_image": [
+            "data/scryfall_images/lotus_cobra_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Lyra-Dawnbringer.jpg": {
+        "cardname": "Lyra Dawnbringer",
+        "path": "Data/Game\\Lyra-Dawnbringer.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/lyra_dawnbringer_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Mana-Geyser.jpg": {
+        "cardname": "Mana Geyser",
+        "path": "Data/Game\\Mana-Geyser.jpg",
+        "set": "cns",
+        "scryfall_image": [
+            "data/scryfall_images/mana_geyser_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Mishra's-Bauble.jpg": {
+        "cardname": "Mishra's Bauble",
+        "path": "Data/Game\\Mishra's-Bauble.jpg",
+        "set": "ima",
+        "scryfall_image": [
+            "data/scryfall_images/mishra's_bauble_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Mystical-Tutor.jpg": {
+        "cardname": "Mystical Tutor",
+        "path": "Data/Game\\Mystical-Tutor.jpg",
+        "set": "dmr",
+        "scryfall_image": [
+            "data/scryfall_images/mystical_tutor_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Nautiloid-Ship.jpg": {
+        "cardname": "Nautiloid Ship",
+        "path": "Data/Game\\Nautiloid-Ship.jpg",
+        "set": "clb",
+        "scryfall_image": [
+            "data/scryfall_images/nautiloid_ship_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Notion-Thief.jpg": {
+        "cardname": "Notion Thief",
+        "path": "Data/Game\\Notion-Thief.jpg",
+        "set": "a25",
+        "scryfall_image": [
+            "data/scryfall_images/notion_thief_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Opt.jpg": {
+        "cardname": "Opt",
+        "path": "Data/Game\\Opt.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/opt_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Oracle-of-Mul-Daya.jpg": {
+        "cardname": "Oracle of Mul Daya",
+        "path": "Data/Game\\Oracle-of-Mul-Daya.jpg",
+        "set": "otc",
+        "scryfall_image": [
+            "data/scryfall_images/oracle_of_mul_daya_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Path-to-Exile.jpg": {
+        "cardname": "Path to Exile",
+        "path": "Data/Game\\Path-to-Exile.jpg",
+        "set": "2xm",
+        "scryfall_image": [
+            "data/scryfall_images/path_to_exile_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Pull-from-Tomorrow.jpg": {
+        "cardname": "Pull from Tomorrow",
+        "path": "Data/Game\\Pull-from-Tomorrow.jpg",
+        "set": "drc",
+        "scryfall_image": [
+            "data/scryfall_images/pull_from_tomorrow_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Rampaging-Baloths.jpg": {
+        "cardname": "Rampaging Baloths",
+        "path": "Data/Game\\Rampaging-Baloths.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/rampaging_baloths_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Relinquary-Tower.jpg": {
+        "cardname": "Relinquary Tower",
+        "path": "Data/Game\\Relinquary-Tower.jpg",
+        "set": "m19",
+        "scryfall_image": [
+            "data/scryfall_images/relinquary_tower_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Rhystic-Study.jpg": {
+        "cardname": "Rhystic Study",
+        "path": "Data/Game\\Rhystic-Study.jpg",
+        "set": "pcy",
+        "scryfall_image": [
+            "data/scryfall_images/rhystic_study_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Rograkh,-Son-of-Rohgahh.jpg": {
+        "cardname": "Rograkh, Son of Rohgahh",
+        "path": "Data/Game\\Rograkh,-Son-of-Rohgahh.jpg",
+        "set": "cmr",
+        "scryfall_image": [
+            "data/scryfall_images/rograkh,_son_of_rohgahh_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Ruby-Daring-Tracker.jpg": {
+        "cardname": "Ruby Daring Tracker",
+        "path": "Data/Game\\Ruby-Daring-Tracker.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/ruby_daring_tracker_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Scute-Swarm.jpg": {
+        "cardname": "Scute Swarm",
+        "path": "Data/Game\\Scute-Swarm.jpg",
+        "set": "ncc",
+        "scryfall_image": [
+            "data/scryfall_images/scute_swarm_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Skullclamp.jpg": {
+        "cardname": "Skullclamp",
+        "path": "Data/Game\\Skullclamp.jpg",
+        "set": "blc",
+        "scryfall_image": [
+            "data/scryfall_images/skullclamp_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Sol-Ring.jpg": {
+        "cardname": "Sol Ring",
+        "path": "Data/Game\\Sol-Ring.jpg",
+        "set": "c19",
+        "scryfall_image": [
+            "data/scryfall_images/sol_ring_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Solemn-Simulacrum.jpg": {
+        "cardname": "Solemn Simulacrum",
+        "path": "Data/Game\\Solemn-Simulacrum.jpg",
+        "set": "scd",
+        "scryfall_image": [
+            "data/scryfall_images/solemn_simulacrum_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Strip-Mine.jpg": {
+        "cardname": "Strip Mine",
+        "path": "Data/Game\\Strip-Mine.jpg",
+        "set": "4ed",
+        "scryfall_image": [
+            "data/scryfall_images/strip_mine_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Swords-to-Plowshares.jpg": {
+        "cardname": "Swords to Plowshares",
+        "path": "Data/Game\\Swords-to-Plowshares.jpg",
+        "set": "ncc",
+        "scryfall_image": [
+            "data/scryfall_images/swords_to_plowshares_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Telepathy.jpg": {
+        "cardname": "Telepathy",
+        "path": "Data/Game\\Telepathy.jpg",
+        "set": "usg",
+        "scryfall_image": [
+            "data/scryfall_images/telepathy_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Temple-Garden.jpg": {
+        "cardname": "Temple Garden",
+        "path": "Data/Game\\Temple-Garden.jpg",
+        "set": "grn",
+        "scryfall_image": [
+            "data/scryfall_images/temple_garden_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\The-Gitrog-Monster.jpg": {
+        "cardname": "The Gitrog Monster",
+        "path": "Data/Game\\The-Gitrog-Monster.jpg",
+        "set": "inr",
+        "scryfall_image": [
+            "data/scryfall_images/the_gitrog_monster_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Thespian's-Stage.jpg": {
+        "cardname": "Thespian's Stage",
+        "path": "Data/Game\\Thespian's-Stage.jpg",
+        "set": "m3c",
+        "scryfall_image": [
+            "data/scryfall_images/thespian's_stage_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Thran-Dynamo.jpg": {
+        "cardname": "Thran Dynamo",
+        "path": "Data/Game\\Thran-Dynamo.jpg",
+        "set": "uds",
+        "scryfall_image": [
+            "data/scryfall_images/thran_dynamo_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Underworld-Breach.jpg": {
+        "cardname": "Underworld Breach",
+        "path": "Data/Game\\Underworld-Breach.jpg",
+        "set": "thb",
+        "scryfall_image": [
+            "data/scryfall_images/underworld_breach_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Unexpected-Windfall.jpg": {
+        "cardname": "Unexpected Windfall",
+        "path": "Data/Game\\Unexpected-Windfall.jpg",
+        "set": "afr",
+        "scryfall_image": [
+            "data/scryfall_images/unexpected_windfall_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Westvale-Abbey.jpg": {
+        "cardname": "Westvale Abbey",
+        "path": "Data/Game\\Westvale-Abbey.jpg",
+        "set": "inr",
+        "scryfall_image": [
+            "data/scryfall_images/westvale_abbey_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Windswept-Heath.jpg": {
+        "cardname": "Windswept Heath",
+        "path": "Data/Game\\Windswept-Heath.jpg",
+        "set": "mh3",
+        "scryfall_image": [
+            "data/scryfall_images/windswept_heath_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Wojek-Investigator.jpg": {
+        "cardname": "Wojek Investigator",
+        "path": "Data/Game\\Wojek-Investigator.jpg",
+        "set": "mkm",
+        "scryfall_image": [
+            "data/scryfall_images/wojek_investigator_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Wylie-Duke-Atiin-Hero.jpg": {
+        "cardname": "Wylie Duke Atiin Hero",
+        "path": "Data/Game\\Wylie-Duke-Atiin-Hero.jpg",
+        "set": "otj",
+        "scryfall_image": [
+            "data/scryfall_images/wylie_duke_atiin_hero_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Youthful-Valkyrie.jpg": {
+        "cardname": "Youthful Valkyrie",
+        "path": "Data/Game\\Youthful-Valkyrie.jpg",
+        "set": "fdn",
+        "scryfall_image": [
+            "data/scryfall_images/youthful_valkyrie_scryfall.jpg"
+        ]
+    },
+    "Data/Game\\Zacama-Primal-Calamity.jpg": {
+        "cardname": "Zacama Primal Calamity",
+        "path": "Data/Game\\Zacama-Primal-Calamity.jpg",
+        "set": "lcc",
+        "scryfall_image": [
+            "data/scryfall_images/zacama_primal_calamity_scryfall.jpg"
         ]
     }
 }

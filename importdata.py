@@ -9,7 +9,7 @@ import cv2
 import dataaugmentation
 
 class dataimport:
-    def __init__(self,data_path: str = "data/unprocessed",json_path: str = "data_labels.json"):
+    def __init__(self,data_path: str = "Data/Game",json_path: str = "data_labels.json"):
         self.data_path = data_path
         self.json_path = json_path
         self.min_width, self.min_height = float("inf"), float("inf")
@@ -121,6 +121,7 @@ class dataimport:
             for root, dirs, files in os.walk(self.data_path):
                     for file in tqdm(files, desc="Labeling images", unit="img"):
                         if file.endswith('.jpg') or file.endswith('.png'):
+                            '''
                             new_filename = file.replace(" ", "-")
                             new_image_path = os.path.join(root, new_filename)
                             if  new_image_path in self.datainfo:
@@ -150,6 +151,8 @@ class dataimport:
                                 self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
                             self.fetch_scryfall_image(new_image_path, version="art_crop")
                             self.fetch_scryfall_image(new_image_path, version="normal")
+                            with open(self.json_path, 'w') as f:
+                                json.dump(self.datainfo, f, indent=4) '''
                             
         finally:
             if fig is not None:
