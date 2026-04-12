@@ -7,9 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import cv2
 import dataaugmentation
+import time
 
 class dataimport:
-    def __init__(self,data_path: str = "Data/Game",json_path: str = "data_labels.json"):
+    def __init__(self,data_path: str = "data/unprocessed",json_path: str = "data_labels.json"):
         self.data_path = data_path
         self.json_path = json_path
         self.min_width, self.min_height = float("inf"), float("inf")
@@ -45,7 +46,7 @@ class dataimport:
                 h, w = img.shape[:2]
                 self.min_width = min(self.min_width, w)
                 self.min_height = min(self.min_height, h)
-
+        
         if self.min_width == float("inf") or self.min_height == float("inf"):
             raise ValueError("No readable images found.")
 
@@ -100,7 +101,7 @@ class dataimport:
         os.makedirs(r"data/scryfall_images", exist_ok=True)
         safe_name = self.datainfo[imagepath]["cardname"].lower().replace(" ", "_")
         ext = "jpg"
-        filepath = f"data/scryfall_images/{safe_name}_scryfall.{ext}"
+        filepath = f"data/scryfall_images/{safe_name}_scryfall_{version}.{ext}"
 
         with open(filepath, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
@@ -121,12 +122,9 @@ class dataimport:
             for root, dirs, files in os.walk(self.data_path):
                     for file in tqdm(files, desc="Labeling images", unit="img"):
                         if file.endswith('.jpg') or file.endswith('.png'):
-                            '''
                             new_filename = file.replace(" ", "-")
                             new_image_path = os.path.join(root, new_filename)
-                            if  new_image_path in self.datainfo:
-                                new_image_path = self.datainfo[new_image_path]["path"]
-                            else:
+                            if  new_image_path not in self.datainfo:
                                 image_path = os.path.join(root, file)
 
                                 if fig is None:
@@ -149,10 +147,18 @@ class dataimport:
                                     os.rename(image_path, new_image_path)
                                 set = input("Enter the set code for this card: ")
                                 self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
-                            self.fetch_scryfall_image(new_image_path, version="art_crop")
-                            self.fetch_scryfall_image(new_image_path, version="normal")
+                            try:
+                                print(self.datainfo[new_image_path]["scryfall_image"])
+                                if len(self.datainfo[new_image_path]["scryfall_image"]) <= 2:
+                                    self.fetch_scryfall_image(new_image_path, version="art_crop")
+                                    time.sleep(1)
+                                    self.fetch_scryfall_image(new_image_path, version="normal")
+                            except KeyError:
+                                self.fetch_scryfall_image(new_image_path, version="art_crop")
+                                time.sleep(1)
+                                self.fetch_scryfall_image(new_image_path, version="normal")
                             with open(self.json_path, 'w') as f:
-                                json.dump(self.datainfo, f, indent=4) '''
+                                json.dump(self.datainfo, f, indent=4)
                             
         finally:
             if fig is not None:
