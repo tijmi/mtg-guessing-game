@@ -190,27 +190,28 @@ class trainer:
         scryfall_labels = []
 
         for i, key in enumerate(self.class_names):
-            img_path = self.data[key].get("scryfall_image")
-            if img_path:
-                img = cv2.imread(img_path)
-                if img is not None:
-                    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+            imgs_path = self.data[key].get("scryfall_image")
+            for img_path in imgs_path or []:
+                if img_path:
+                    img = cv2.imread(img_path)
+                    if img is not None:
+                        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-                    # Apply same preprocessing as training
-                    h, w = img.shape[:2]
-                    max_h = max(self.input_shape[0], h)
-                    max_w = max(self.input_shape[1], w)
-                    img = cv2.copyMakeBorder(
-                        img, 0, max_h - h, 0, max_w - w,
-                        borderType=cv2.BORDER_CONSTANT, value=(0, 0, 0)
-                    )
-                    img = cv2.resize(img, (self.input_shape[1], self.input_shape[0]))
-                    scryfall_images.append(img.astype(np.float32))
-                    scryfall_labels.append(i)
+                        # Apply same preprocessing as training
+                        h, w = img.shape[:2]
+                        max_h = max(self.input_shape[0], h)
+                        max_w = max(self.input_shape[1], w)
+                        img = cv2.copyMakeBorder(
+                            img, 0, max_h - h, 0, max_w - w,
+                            borderType=cv2.BORDER_CONSTANT, value=(0, 0, 0)
+                        )
+                        img = cv2.resize(img, (self.input_shape[1], self.input_shape[0]))
+                        scryfall_images.append(img.astype(np.float32))
+                        scryfall_labels.append(i)
+                    else:
+                        print(f"Warning: could not load scryfall image for {key}")
                 else:
-                    print(f"Warning: could not load scryfall image for {key}")
-            else:
-                print(f"Warning: no scryfall_image key for {key}")
+                    print(f"Warning: no scryfall_image key for {key}")
 
         if not scryfall_images:
             print("No scryfall images found, skipping scryfall confusion matrix.")

@@ -19,8 +19,12 @@ class dataimport:
             "Accept": "application/json",
         }
         self.BASE_URL = "https://api.scryfall.com"
-        with open(self.json_path, 'r') as f:
-            self.datainfo = json.load(f)
+        try:
+            with open(self.json_path, 'r') as f:
+                self.datainfo = json.load(f)
+        except FileNotFoundError:
+            self.datainfo = {}
+        
         
     def scale_images(self):
         target_width, target_height = 256, self.min_height * 256 // self.min_width
@@ -81,36 +85,39 @@ class dataimport:
                 cv2.imwrite(image_path, scaled)  # overwrite original file in its own folder
     
     def fetch_scryfall_image(self,imagepath:str,version:str = "art_crop"):
-        print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
-        params = {
-            "fuzzy": self.datainfo[imagepath]["cardname"],
-            "format": "image",
-            "version": version,
-        }
-        
-        if self.datainfo[imagepath]["set"]:
-            params["set"] = self.datainfo[imagepath]["set"]  # e.g. "lea", "m21", "mh3"
-
-        response = requests.get(
-            "https://api.scryfall.com/cards/named",
-            headers=self.HEADERS,
-            params=params,
-            stream=True
-        )
-        response.raise_for_status()
         os.makedirs(r"data/scryfall_images", exist_ok=True)
         safe_name = self.datainfo[imagepath]["cardname"].lower().replace(" ", "_")
         ext = "jpg"
         filepath = f"data/scryfall_images/{safe_name}_scryfall_{version}.{ext}"
+        if filepath not in self.datainfo[imagepath].get("scryfall_image", []):
+            print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
+            
+            params = {
+                "fuzzy": self.datainfo[imagepath]["cardname"],
+                "format": "image",
+                "version": version,
+            }
+            
+            if self.datainfo[imagepath]["set"]:
+                params["set"] = self.datainfo[imagepath]["set"]  # e.g. "lea", "m21", "mh3"
 
-        with open(filepath, "wb") as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
-        try:
-            self.datainfo[imagepath]["scryfall_image"].append(filepath)
-        except:
-            self.datainfo[imagepath]["scryfall_image"] = [filepath]
-        print(f"Saved: {filepath}")
+            response = requests.get(
+                "https://api.scryfall.com/cards/named",
+                headers=self.HEADERS,
+                params=params,
+                stream=True
+            )
+            response.raise_for_status()
+            
+
+            with open(filepath, "wb") as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            try:
+                self.datainfo[imagepath]["scryfall_image"].append(filepath)
+            except KeyError:
+                self.datainfo[imagepath]["scryfall_image"] = [filepath]
+            print(f"Saved: {filepath}")
     
     def label_data(self):
         if len(self.data_path) == 0:
@@ -148,7 +155,6 @@ class dataimport:
                                 set = input("Enter the set code for this card: ")
                                 self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
                             try:
-                                print(self.datainfo[new_image_path]["scryfall_image"])
                                 if len(self.datainfo[new_image_path]["scryfall_image"]) <= 2:
                                     self.fetch_scryfall_image(new_image_path, version="art_crop")
                                     time.sleep(1)
