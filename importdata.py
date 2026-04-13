@@ -26,18 +26,6 @@ class dataimport:
             self.datainfo = {}
         
         
-    def scale_images(self):
-        target_width, target_height = 256, self.min_height * 256 // self.min_width
-        for root, dirs, files in os.walk(self.data_path):
-            for file in tqdm(files, desc="Scaling images", unit="img"):
-                image_path = os.path.join(root, file)
-                image = cv2.imread(image_path)
-                if image is None:
-                    continue
-
-                scaled = cv2.resize(image, (target_width, target_height), interpolation=cv2.INTER_AREA)
-                cv2.imwrite(image_path, scaled)  # overwrite original file in its own folder
-    
     def crop_images(self):
         self.min_width, self.min_height = float("inf"), float("inf")
 
@@ -73,7 +61,7 @@ class dataimport:
                 cv2.imwrite(image_path, cropped)  # overwrite original file in its own folder
                         
     def scale_images(self):
-        target_width, target_height = 256, self.min_height * 256 // self.min_width
+        target_width, target_height = 128, self.min_height * 128 // self.min_width
         for root, dirs, files in os.walk(self.data_path):
             for file in tqdm(files, desc="Scaling images", unit="img"):
                 image_path = os.path.join(root, file)
@@ -90,7 +78,7 @@ class dataimport:
         ext = "jpg"
         filepath = f"data/scryfall_images/{safe_name}_scryfall_{version}.{ext}"
         if filepath not in self.datainfo[imagepath].get("scryfall_image", []):
-            print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
+            # print(f"Fetching Scryfall data for: {imagepath} with data info: {self.datainfo[imagepath]}")
             
             params = {
                 "fuzzy": self.datainfo[imagepath]["cardname"],
@@ -129,10 +117,13 @@ class dataimport:
             for root, dirs, files in os.walk(self.data_path):
                     for file in tqdm(files, desc="Labeling images", unit="img"):
                         if file.endswith('.jpg') or file.endswith('.png'):
+                            image_path = os.path.join(root, file)
+                            
                             new_filename = file.replace(" ", "-")
                             new_image_path = os.path.join(root, new_filename)
+                            if new_image_path != image_path:
+                                    os.rename(image_path, new_image_path)
                             if  new_image_path not in self.datainfo:
-                                image_path = os.path.join(root, file)
 
                                 if fig is None:
                                     fig, ax = plt.subplots()
@@ -150,19 +141,23 @@ class dataimport:
                                 name = filename.with_suffix('')
                                 name = str(name).replace("-", " ")
                                 
-                                if new_image_path != image_path:
-                                    os.rename(image_path, new_image_path)
                                 set = input("Enter the set code for this card: ")
-                                self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set}
+                                self.datainfo[new_image_path] = {"cardname": str(name), "path": new_image_path, "set": set, "scryfall_image": []}
                             try:
-                                if len(self.datainfo[new_image_path]["scryfall_image"]) <= 2:
-                                    self.fetch_scryfall_image(new_image_path, version="art_crop")
+                                if len(self.datainfo[new_image_path]["scryfall_image"]) <= 4:
+                                    # self.fetch_scryfall_image(new_image_path, version="art_crop")
+                                    # time.sleep(1)
+                                    # self.fetch_scryfall_image(new_image_path, version="normal")
                                     time.sleep(1)
-                                    self.fetch_scryfall_image(new_image_path, version="normal")
+                                    self.fetch_scryfall_image(new_image_path, version="small")
+                                    
                             except KeyError:
                                 self.fetch_scryfall_image(new_image_path, version="art_crop")
                                 time.sleep(1)
-                                self.fetch_scryfall_image(new_image_path, version="normal")
+                                # self.fetch_scryfall_image(new_image_path, version="normal")
+                                # time.sleep(1)
+                                # self.fetch_scryfall_image(new_image_path, version="small")
+                                
                             with open(self.json_path, 'w') as f:
                                 json.dump(self.datainfo, f, indent=4)
                             

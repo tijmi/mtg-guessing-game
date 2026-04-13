@@ -9,9 +9,10 @@ from sklearn.metrics import confusion_matrix,ConfusionMatrixDisplay
 from sklearn.utils.class_weight import compute_class_weight
 
 class trainer:
-    def __init__(self,datapath: str = "data/processed_images",json_path: str = "data_labels.json"):
+    def __init__(self,datapath: str = "data/processed_images",json_path: str = "data_labels.json",modellevel: str = "pretrained"):
         self.datapath = datapath
         self.json_path = json_path
+        self.modellevel = modellevel
         self.input_shape = None
         with open(self.json_path, 'r') as f:
             self.data = json.load(f)
@@ -52,7 +53,7 @@ class trainer:
         max_width = max(img.shape[1] for img in self.x)
         
         padded_images = []
-        for img in self.x:
+        for img in tqdm(self.x, desc="Padding images", unit="img"):
             h, w = img.shape[:2]
             bottom = max_height - h
             right = max_width - w
@@ -67,9 +68,15 @@ class trainer:
             )
             padded_images.append(padded)
 
-        self.x = np.stack(padded_images).astype(np.float32)
+        self.x = np.stack(padded_images)
+        del padded_images
+        print(f"Data shape: {self.x.shape}, Labels shape: {len(self.y)}")
         self.y = np.array(self.y, dtype=np.int32)
+        y_array = np.array(self.y, dtype=np.int32)
+        del self.y  # or just reassign, but be aware the list stays in memory until GC
+        self.y = y_array
         self.input_shape = self.x.shape[1:]
+        print(f"Input shape set to: {self.input_shape}")
         
         if self.input_shape[0] < 96 or self.input_shape[1] < 96:
             print("Resizing images to 96x96 for MobileNetV2...")
@@ -82,7 +89,7 @@ class trainer:
         print(f"Training samples: {len(self.X_train)}, Testing samples: {len(self.X_test)}")
 
                     
-    def model(self):
+    def pretrainmodel(self):
         if self.input_shape is None:
             raise ValueError("Run preparedata() before building the model")
 
@@ -118,7 +125,7 @@ class trainer:
             metrics=['accuracy']
         )
         
-    def train(self):
+    def trainpretrained(self):
         callbacks = [
             tf.keras.callbacks.ModelCheckpoint(
                 "mtgmodel.keras", save_best_only=True, monitor="val_loss", mode="min"
@@ -179,10 +186,20 @@ class trainer:
         y_pred = self.to_class_labels(self.model.predict(self.X_test))
         # ── Standard confusion matrix ────────────────────────────────────
         cm = confusion_matrix(self.y_test, y_pred)
-        disp = ConfusionMatrixDisplay(confusion_matrix=cm)
-        disp.plot()
+        fig_size = max(18, self.num_classes * 0.35)
+        fig, ax = plt.subplots(figsize=(fig_size, fig_size), dpi=250)
+        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=self.class_names)
+        disp.plot(
+            ax=ax,
+            xticks_rotation=90,
+            cmap="Blues",
+            include_values=False,
+        )
+        ax.tick_params(axis="x", labelsize=5)
+        ax.tick_params(axis="y", labelsize=5)
         plt.title("Confusion Matrix (Test Set)")
-        plt.savefig('confusion_matrix.png')
+        plt.tight_layout()
+        plt.savefig('confusion_matrix.png', dpi=400, bbox_inches='tight')
         plt.show(block=False)
 
         # ── Predict on scryfall images ───────────────────────────────────
@@ -225,21 +242,31 @@ class trainer:
         # Print per-card result
 
         # ── Scryfall confusion matrix ────────────────────────────────────
-        cm_scryfall = confusion_matrix(y_scryfall, y_scryfall_pred, labels=list(range(self.num_classes)))
+        cm_scryfall = confusion_matrix(y_scryfall, y_scryfall_pred)
+        fig_size = max(18, self.num_classes * 0.35)
+        fig, ax = plt.subplots(figsize=(fig_size, fig_size), dpi=250)
         disp2 = ConfusionMatrixDisplay(
             confusion_matrix=cm_scryfall,
             display_labels=self.class_names
         )
-        disp2.plot(xticks_rotation=45)
+        disp2.plot(
+            ax=ax,
+            xticks_rotation=90,
+            cmap="Blues",
+            include_values=False,
+        )
+        ax.tick_params(axis="x", labelsize=5)
+        ax.tick_params(axis="y", labelsize=5)
         plt.title("Confusion Matrix (Scryfall Images)")
         plt.tight_layout()
-        plt.savefig('confusion_matrix_scryfall.png')
+        plt.savefig('confusion_matrix_scryfall.png', dpi=400, bbox_inches='tight')
         plt.show(block=False)
         
         
     def trainmodel(self):
-        self.model()
-        self.compile_model()
-        self.train()
+        if self.modellevel == "pretrained":
+            self.pretrainmodel()
+            self.compile_model()
+            self.trainpretrained()
         self.evaluate()
         self.model.save("mtgmodel.keras") 
