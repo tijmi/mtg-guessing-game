@@ -7,6 +7,10 @@ import math
 
 class Game:
     def __init__(self, width, height):
+        self.COLOR_INACTIVE = pygame.Color('lightskyblue3')
+        self.COLOR_ACTIVE = pygame.Color('dodgerblue2')
+        FONT = pygame.font.SysFont("Segoe UI", 20)
+
         pygame.init()
         self.width = width
         self.height = height
@@ -105,15 +109,16 @@ class Game:
         
     # !!!!! The following code is a modified version of the stack overflow answer found here: https://stackoverflow.com/questions/46390231/how-to-create-an-input-box-in-pygame/46390328#46390328  !!!!!
     class InputBox:
+        # COLOR_INACTIVE = pygame.Color('lightskyblue3')
+        # COLOR_ACTIVE = pygame.Color('dodgerblue2')
+        # FONT = pygame.font.Font(None, 32)
         def __init__(self, x, y, w, h, text=''):
             self.typed = False
             self.default_x = x
             self.rect = pygame.Rect(x, y, w, h)
-            self.color_inactive = pygame.Color('white')
-            self.color_active = pygame.Color('dodgerblue2')
-            self.font = pygame.font.SysFont("Arial", 28)
+            self.color = self.COLOR_INACTIVE
             self.text = text
-            self.txt_surface = self.font.render(text, True, self.color_inactive)
+            self.txt_surface = self.FONT.render(text, True, self.color)
             self.active = False
             self.flash_color = (255, 0, 0)
             self.flash_color_goal = self.color_active
@@ -130,6 +135,7 @@ class Game:
                 else:
                     self.active = False
                 # Change the current color of the input box.
+                self.color = self.COLOR_ACTIVE if self.active else self.COLOR_INACTIVE
             if event.type == pygame.KEYDOWN:
                 if self.active:
                     if event.key == pygame.K_RETURN:
@@ -148,7 +154,7 @@ class Game:
                         self.typed = True
                         self.text += event.unicode
                     # Re-render the text.
-                    self.txt_surface = self.font.render(self.text, True, self.color_active if self.active else self.color_inactive)
+                    self.txt_surface = self.FONT.render(self.text, True, self.color)
 
         def update(self):
             # Resize the box if the text is too long.

@@ -1,5 +1,8 @@
 from game import Game
 import pygame
+import importdata
+import trainai
+
 
 class game:
     def __init__(self):
@@ -43,7 +46,8 @@ class game:
 if __name__ == "__main__":
     while True:
         try:
-            mode = int(input("1: play game\n 2:train ai \n 3:import new data \n").strip() or "1")
+            print("1:play game\n2:train ai \n3:import new data \n4:stop program \n")
+            mode = int(input("enter choice: ").strip() or "1")
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
@@ -51,3 +55,15 @@ if __name__ == "__main__":
             game_instance = game()
             game_instance.start_round()
             game_instance.run()
+        elif mode == 2:
+            trainer_instance = trainai.trainer()
+            trainer_instance.preparedata()
+            trainer_instance.trainmodel()
+        elif mode == 3:
+            data_importer = importdata.dataimport()
+            data_importer.newdata()
+        elif mode == 4:
+            print("Stopping program.")
+            break
+        else:
+            print("Invalid mode. Please enter a number between 1 and 4.")
