@@ -1,6 +1,8 @@
 from PIL import Image, ImageFilter
 
 import pygame
+import math
+
 
 
 class Game:
@@ -15,13 +17,14 @@ class Game:
         window = (width, height)
         self.screen = pygame.display.set_mode(window)
         self.screen = pygame.display.set_mode((width, height))
-        self.fpsfont = pygame.font.SysFont("Segoe UI", 20) # reminder to try Lemon font later
-        self.scorefont = pygame.font.SysFont("Segoe UI", 80)
+        self.fpsfont = pygame.font.SysFont("Arial", 20) # reminder to try Lemon font later
+        self.scorefont = pygame.font.SysFont("Arial", 80)
         self.easy_button = self.Button(400, 720, 250, 100, "Easy")
         self.medium_button = self.Button(800, 720, 250, 100, "Medium")
         self.hard_button = self.Button(1200, 720, 250, 100, "Hard")
-        self.text_input = self.InputBox(700, 790, 140, 32)
+        self.text_input = self.InputBox(960, 200, 320, 44)
         self.state = 2
+        self.round_final_time = "0"
 
         #reminder to self to implement:
         # display image, display time elapsed
@@ -31,6 +34,13 @@ class Game:
         self.card_img = pygame.image.load(card_img) # pass a filepath to unprocessed image
         self.card_img_temp = pygame.transform.scale_by(self.card_img, (self.height/(self.card_img.get_height()*2)))
         self.card_name = card_name
+        self.text_input.card_name = card_name
+        self.text_input.active = True
+        self.text_input.typed = False
+        self.text_input.round_over = False
+        self.text_input.flash_color_goal = pygame.Color('dodgerblue2')
+        self.text_input.color_active = pygame.Color('dodgerblue2')
+        self.text_input.text = ""
         self.diff = difficulty
 
     def load_card(self, card_img):
@@ -42,9 +52,9 @@ class Game:
         pil_image = Image.frombytes("RGBA", self.card_img_temp.get_size(), data)
         pil_image = pil_image.filter(ImageFilter.GaussianBlur(radius=max(20 - self.time, 0)))
         self.card_img = pygame.image.fromstring(pil_image.tobytes(), pil_image.size, pil_image.mode)
-        self.text_input.update()
-        self.text_input.draw(self.screen)
         background = pygame.Surface((self.width, self.height))
+        self.text_input.update()
+        self.text_input.draw(background)
         background.blit(self.card_img, (self.width/2 - self.card_img.get_width()/2, self.height/2 - self.card_img.get_height()/2))
         self.screen.blit(background,(0,0))
 
@@ -75,8 +85,12 @@ class Game:
 
     
     def draw_time(self):
-        text = self.fpsfont.render(str(round(self.time, 2)), True, pygame.Color("red"))
-        self.screen.blit(text, (self.width/2 - 15, 200))
+        if not self.text_input.round_over:
+            text = self.fpsfont.render(str(round(self.time, 2)), True, pygame.Color("red"))
+            self.round_final_time = str(round(self.time, 2))
+        else:
+            text = self.fpsfont.render(self.round_final_time, True, pygame.Color("green"))
+        self.screen.blit(text, (self.width/2 - 15, 150))
 
     class Button:
         def __init__(self, x, y, width, height, text):
@@ -88,7 +102,7 @@ class Game:
         
         def draw(self, screen):
             self.rect_position = pygame.draw.rect(screen, (255, 0, 0), (self.x, self.y, self.width, self.height))
-            font = pygame.font.SysFont("Segoe UI", 20)
+            font = pygame.font.SysFont("Arial", 20)
             text_surface = font.render(self.text, True, (255, 255, 255))
             text_rect = text_surface.get_rect(center=(self.x + self.width/2, self.y + self.height/2))
             screen.blit(text_surface, text_rect)
@@ -99,11 +113,18 @@ class Game:
         # COLOR_ACTIVE = pygame.Color('dodgerblue2')
         # FONT = pygame.font.Font(None, 32)
         def __init__(self, x, y, w, h, text=''):
+            self.typed = False
+            self.default_x = x
             self.rect = pygame.Rect(x, y, w, h)
             self.color = self.COLOR_INACTIVE
             self.text = text
             self.txt_surface = self.FONT.render(text, True, self.color)
             self.active = False
+            self.flash_color = (255, 0, 0)
+            self.flash_color_goal = self.color_active
+            self.wrong_guess = 0
+            self.truth_nuke = 0
+            self.round_over = False
 
         def handle_event(self, event):
             if event.type == pygame.MOUSEBUTTONDOWN:
@@ -118,11 +139,19 @@ class Game:
             if event.type == pygame.KEYDOWN:
                 if self.active:
                     if event.key == pygame.K_RETURN:
-                        print(self.text)
+                        if self.text == self.card_name:
+                            print("yuno ball")
+                            self.truth_nuke = 100
+                            self.round_over = True
+                            self.active = False
+                        else:
+                            print("Hell na")
+                            self.wrong_guess = 100
                         self.text = ''
                     elif event.key == pygame.K_BACKSPACE:
                         self.text = self.text[:-1]
                     else:
+                        self.typed = True
                         self.text += event.unicode
                     # Re-render the text.
                     self.txt_surface = self.FONT.render(self.text, True, self.color)
@@ -130,14 +159,49 @@ class Game:
         def update(self):
             # Resize the box if the text is too long.
             width = max(200, self.txt_surface.get_width()+10)
+            self.rect.x = min(self.default_x, self.default_x - width/2)
             self.rect.w = width
+            if not self.active and not self.round_over:
+                self.txt_surface = self.font.render("Click back to guess", True, pygame.Color('gray'))
 
+        def lerp_color(self, color1, color2, t):
+            return tuple(
+            int(c1 + (c2 - c1) * t)
+            for c1, c2 in zip(color1, color2))
+        
         def draw(self, screen):
-            # Blit the text.
-            screen.blit(self.txt_surface, (self.rect.x+5, self.rect.y+5))
-            # Blit the rect.
-            pygame.draw.rect(screen, self.color, self.rect, 2)
+            if not self.typed and self.active:
+                self.txt_surface = self.font.render("Type your guess now", True, self.color_active if self.active else self.color_inactive)
 
+            if self.truth_nuke > 0:
+                t = self.truth_nuke / 100.0
+                self.flash_color_goal = (0,255,80)
+                self.color_active = (0,255,80)
+                self.flash_color = self.lerp_color(self.flash_color_goal ,(0,255,155), t)
+                self.truth_nuke -= 1
+                current_time = pygame.time.get_ticks()
+                #shake_x = self.get_shake_offset(self.truth_nuke, 100, current_time)
+            elif self.wrong_guess > 0:
+                t = self.wrong_guess / 100.0
+                self.flash_color = self.lerp_color((255,0,0), self.flash_color_goal, t)
+                self.wrong_guess -= 2
+                current_time = pygame.time.get_ticks()
+                shake_x = self.get_shake_offset(self.wrong_guess, 100, current_time)
+
+            # Blit the text.
+            #screen.blit(self.txt_surface, (self.rect.x+self.rect.w/2, self.rect.y+5))
+            rect = self.rect
+            rect.x += shake_x if self.wrong_guess > 0 else 0
+            screen.blit(self.txt_surface, (rect.x+5, rect.y+4))
+            # Blit the rect.
+            pygame.draw.rect(screen, self.flash_color if self.wrong_guess > 0 or self.truth_nuke > 0 else (self.color_active if self.active else self.color_inactive), rect, 2)
+
+        def get_shake_offset(self, wrong_value, max_wrong, time_ms, amplitude=20, frequency=40):
+            # Intensity increases as wrong_value decreases toward 0
+            intensity = (wrong_value**1.5 / max_wrong**1.5) if max_wrong > 0 else 0
+            # Sinusoidal shake: left/right oscillation
+            offset_x = amplitude * intensity * math.sin(time_ms * frequency * 0.001)
+            return int(offset_x)
 
             
         
