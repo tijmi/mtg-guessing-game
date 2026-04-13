@@ -9,10 +9,9 @@ from sklearn.metrics import confusion_matrix,ConfusionMatrixDisplay
 from sklearn.utils.class_weight import compute_class_weight
 
 class trainer:
-    def __init__(self,datapath: str = "data/processed_images",json_path: str = "data_labels.json",modellevel: str = "pretrained"):
+    def __init__(self,datapath: str = "data/processed_images",json_path: str = "data_labels.json"):
         self.datapath = datapath
         self.json_path = json_path
-        self.modellevel = modellevel
         self.input_shape = None
         with open(self.json_path, 'r') as f:
             self.data = json.load(f)
@@ -78,7 +77,7 @@ class trainer:
         self.input_shape = self.x.shape[1:]
         print(f"Input shape set to: {self.input_shape}")
         
-        if self.input_shape[0] < 96 or self.input_shape[1] < 96:
+        if (self.input_shape[0] < 96 or self.input_shape[1] < 96):
             print("Resizing images to 96x96 for MobileNetV2...")
             self.x = tf.image.resize(self.x, [96, 96]).numpy()
             self.input_shape = self.x.shape[1:]
@@ -88,28 +87,21 @@ class trainer:
         )
         print(f"Training samples: {len(self.X_train)}, Testing samples: {len(self.X_test)}")
 
-                    
-    def pretrainmodel(self):
+    
+    def model(self):
         if self.input_shape is None:
             raise ValueError("Run preparedata() before building the model")
 
-        # ── Pretrained base ──────────────────────────────────────────────
-        self.base_model = tf.keras.applications.MobileNetV2(
-            input_shape=self.input_shape,
-            include_top=False,
-            weights='imagenet'
-        )
-        self.base_model.trainable = False  # Frozen for phase 1
-
-        # ── Build model ──────────────────────────────────────────────────
         inputs = tf.keras.Input(shape=self.input_shape)
-        
         x = tf.keras.layers.RandomFlip("horizontal")(inputs)
         x = tf.keras.layers.RandomRotation(0.15)(x)
         x = tf.keras.layers.RandomZoom(0.2)(x)
         x = tf.keras.layers.RandomBrightness(0.2)(x)
-        x = tf.keras.applications.mobilenet_v2.preprocess_input(x) 
-        x = self.base_model(x, training=False)
+        x = tf.keras.layers.Conv2D(32, (3, 3), activation='relu')(x)
+        x = tf.keras.layers.MaxPooling2D((2, 2))(x)
+        x = tf.keras.layers.Conv2D(64, (3, 3), activation='relu')(x)
+        x = tf.keras.layers.MaxPooling2D((2, 2))(x)
+        x = tf.keras.layers.Conv2D(128, (3, 3), activation='relu')(x)
         x = tf.keras.layers.GlobalAveragePooling2D()(x)
         x = tf.keras.layers.Dense(128, activation='relu')(x)
         x = tf.keras.layers.Dropout(0.4)(x)
@@ -117,18 +109,10 @@ class trainer:
 
         self.model = tf.keras.Model(inputs, outputs)
 
-
-    def compile_model(self, learning_rate=1e-3):
-        self.model.compile(
-            optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
-            loss='sparse_categorical_crossentropy',
-            metrics=['accuracy']
-        )
-        
-    def trainpretrained(self):
+    def train(self):
         callbacks = [
             tf.keras.callbacks.ModelCheckpoint(
-                "mtgmodel.keras", save_best_only=True, monitor="val_loss", mode="min"
+                "mtgmodel-own.keras", save_best_only=True, monitor="val_loss", mode="min"
             ),
             tf.keras.callbacks.EarlyStopping(
                 monitor="val_loss", patience=10, restore_best_weights=True
@@ -137,33 +121,18 @@ class trainer:
                 monitor="val_loss", factor=0.5, patience=4, min_lr=1e-6
             ),
         ]
+        print("\nTraining own model...")
 
-        print("\nPhase 1: Training head only...")
         hist1 = self.model.fit(
             self.X_train, self.y_train,
-            epochs=20,
+            epochs=2000,
             batch_size=32,
             validation_split=0.2,
             callbacks=callbacks
         )
-
-        print("\nPhase 2: Fine-tuning top layers...")
-        self.base_model.trainable = True
-        for layer in self.base_model.layers[:-30]:
-            layer.trainable = False
-
-        self.compile_model(learning_rate=1e-5)
-
-        hist2 = self.model.fit(
-            self.X_train, self.y_train,
-            epochs=50,
-            batch_size=16,
-            validation_split=0.2,
-            callbacks=callbacks
-        )
         
-        acc = hist1.history['accuracy'] + hist2.history['accuracy']
-        val_acc = hist1.history['val_accuracy'] + hist2.history['val_accuracy']
+        acc = hist1.history['accuracy'] 
+        val_acc = hist1.history['val_accuracy'] 
         plt.figure(figsize=(10,5))
         plt.plot(acc, label='accuracy')
         plt.plot(val_acc, label = 'val_accuracy')
@@ -173,6 +142,15 @@ class trainer:
         plt.legend(loc='lower right')
         plt.savefig('training_accuracy.png')
         plt.show(block = False)
+
+
+
+    def compile_model(self, learning_rate=1e-3):
+        self.model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
+            loss='sparse_categorical_crossentropy',
+            metrics=['accuracy']
+        )
         
     def to_class_labels(self, predictions):
         predictions = np.asarray(predictions)
@@ -264,9 +242,8 @@ class trainer:
         
         
     def trainmodel(self):
-        if self.modellevel == "pretrained":
-            self.pretrainmodel()
-            self.compile_model()
-            self.trainpretrained()
+        self.model()
+        self.compile_model()
+        self.train()
         self.evaluate()
         self.model.save("mtgmodel.keras") 
