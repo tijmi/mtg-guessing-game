@@ -123,6 +123,7 @@ class dataimport:
                             new_image_path = os.path.join(root, new_filename)
                             if new_image_path != image_path:
                                     os.rename(image_path, new_image_path)
+                            print(f"Processing: {new_image_path}")
                             if  new_image_path not in self.datainfo:
 
                                 if fig is None:

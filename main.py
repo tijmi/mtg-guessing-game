@@ -10,7 +10,7 @@ class game:
         self.game = Game(1920, 1080)
     
     def start_round(self):
-        self.game.new_round(r"C:\Users\cagla\Downloads\mtg-guessing-game\6ed-260-uktabi-orangutan.jpg", "so2", "easy")
+        self.game.new_round("easy")
 
     def run(self):
         running = True
