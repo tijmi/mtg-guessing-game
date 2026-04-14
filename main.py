@@ -10,7 +10,7 @@ class game:
         self.game = Game(1920, 1080)
     
     def start_round(self):
-        self.game.new_round(r"C:\Users\cagla\Downloads\mtg-guessing-game\6ed-260-uktabi-orangutan.jpg", "so2", "easy")
+        self.game.new_round("easy")
 
     def run(self):
         running = True
@@ -31,7 +31,7 @@ class game:
                     if event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE:
                         running = False
                         pygame.display.quit()
-                    if event.type == pygame.KEYUP and event.key == pygame.K_m:
+                    if event.type == pygame.KEYUP and event.key == pygame.K_m and (not self.game.text_input.active):
                         self.game.state = 2
                     self.game.text_input.handle_event(event)
                 self.game.time = pygame.time.get_ticks()/1000 - self.game.start_time

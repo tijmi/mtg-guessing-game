@@ -1,0 +1,270 @@
+{
+  "Academy Manufactor": {
+    "filepath": "Data/Game/Academy Manufactor.jpg",
+    "name": "Academy Manufactor"
+  },
+  "Arcane Signet": {
+    "filepath": "Data/Game/Arcane Signet.jpg",
+    "name": "Arcane Signet"
+  },
+  "Ashnod's Altar": {
+    "filepath": "Data/Game/Ashnod's Altar.jpg",
+    "name": "Ashnod's Altar"
+  },
+  "Assassin's Trophy": {
+    "filepath": "Data/Game/Assassin's Trophy.jpg",
+    "name": "Assassin's Trophy"
+  },
+  "Aurelia the Warleader": {
+    "filepath": "Data/Game/Aurelia the Warleader.jpg",
+    "name": "Aurelia the Warleader"
+  },
+  "Azusa lost but seeking": {
+    "filepath": "Data/Game/Azusa lost but seeking.jpg",
+    "name": "Azusa lost but seeking"
+  },
+  "Baleful Strix": {
+    "filepath": "Data/Game/Baleful Strix.jpg",
+    "name": "Baleful Strix"
+  },
+  "Blasphemous Act": {
+    "filepath": "Data/Game/Blasphemous Act.jpg",
+    "name": "Blasphemous Act"
+  },
+  "Boros Charm": {
+    "filepath": "Data/Game/Boros Charm.jpg",
+    "name": "Boros Charm"
+  },
+  "Chaos Warp": {
+    "filepath": "Data/Game/Chaos Warp.jpg",
+    "name": "Chaos Warp"
+  },
+  "Colossal Dreadmaw": {
+    "filepath": "Data/Game/Colossal Dreadmaw.jpg",
+    "name": "Colossal Dreadmaw"
+  },
+  "Command Tower": {
+    "filepath": "Data/Game/Command Tower.jpg",
+    "name": "Command Tower"
+  },
+  "Counter Spell": {
+    "filepath": "Data/Game/Counter Spell.jpg",
+    "name": "Counter Spell"
+  },
+  "Crop Rotation": {
+    "filepath": "Data/Game/Crop Rotation.jpg",
+    "name": "Crop Rotation"
+  },
+  "Crucible of Worlds": {
+    "filepath": "Data/Game/Crucible of Worlds.jpg",
+    "name": "Crucible of Worlds"
+  },
+  "Dig Through Time": {
+    "filepath": "Data/Game/Dig Through Time.jpg",
+    "name": "Dig Through Time"
+  },
+  "Doubling Season": {
+    "filepath": "Data/Game/Doubling Season.jpg",
+    "name": "Doubling Season"
+  },
+  "Eslpeth Storm Slayer": {
+    "filepath": "Data/Game/Eslpeth Storm Slayer.jpg",
+    "name": "Eslpeth Storm Slayer"
+  },
+  "Etali, Primal Storm": {
+    "filepath": "Data/Game/Etali, Primal Storm.jpg",
+    "name": "Etali, Primal Storm"
+  },
+  "Evolving Wilds": {
+    "filepath": "Data/Game/Evolving Wilds.jpg",
+    "name": "Evolving Wilds"
+  },
+  "Farseek": {
+    "filepath": "Data/Game/Farseek.jpg",
+    "name": "Farseek"
+  },
+  "Full Throttle": {
+    "filepath": "Data/Game/Full Throttle.jpg",
+    "name": "Full Throttle"
+  },
+  "Generous Gift": {
+    "filepath": "Data/Game/Generous Gift.jpg",
+    "name": "Generous Gift"
+  },
+  "Ghalta Primal Hunger": {
+    "filepath": "Data/Game/Ghalta Primal Hunger.jpg",
+    "name": "Ghalta Primal Hunger"
+  },
+  "Great Hall of the Citadel": {
+    "filepath": "Data/Game/Great Hall of the Citadel.jpg",
+    "name": "Great Hall of the Citadel"
+  },
+  "Gush": {
+    "filepath": "Data/Game/Gush.jpg",
+    "name": "Gush"
+  },
+  "Hullbreaker Horror": {
+    "filepath": "Data/Game/Hullbreaker Horror.jpg",
+    "name": "Hullbreaker Horror"
+  },
+  "Impact Tremors": {
+    "filepath": "Data/Game/Impact Tremors.jpg",
+    "name": "Impact Tremors"
+  },
+  "Lantern of Insight": {
+    "filepath": "Data/Game/Lantern of Insight.jpg",
+    "name": "Lantern of Insight"
+  },
+  "Laughing Jasper Flint": {
+    "filepath": "Data/Game/Laughing Jasper Flint.jpg",
+    "name": "Laughing Jasper Flint"
+  },
+  "Loot Exuberant Explorer": {
+    "filepath": "Data/Game/Loot Exuberant Explorer.jpg",
+    "name": "Loot Exuberant Explorer"
+  },
+  "Lotus Cobra": {
+    "filepath": "Data/Game/Lotus Cobra.jpg",
+    "name": "Lotus Cobra"
+  },
+  "Lyra Dawnbringer": {
+    "filepath": "Data/Game/Lyra Dawnbringer.jpg",
+    "name": "Lyra Dawnbringer"
+  },
+  "Mana Geyser": {
+    "filepath": "Data/Game/Mana Geyser.jpg",
+    "name": "Mana Geyser"
+  },
+  "Mishra's Bauble": {
+    "filepath": "Data/Game/Mishra's Bauble.jpg",
+    "name": "Mishra's Bauble"
+  },
+  "Mystical Tutor": {
+    "filepath": "Data/Game/Mystical Tutor.jpg",
+    "name": "Mystical Tutor"
+  },
+  "Nautiloid Ship": {
+    "filepath": "Data/Game/Nautiloid Ship.jpg",
+    "name": "Nautiloid Ship"
+  },
+  "Notion Thief": {
+    "filepath": "Data/Game/Notion Thief.jpg",
+    "name": "Notion Thief"
+  },
+  "Opt": {
+    "filepath": "Data/Game/Opt.jpg",
+    "name": "Opt"
+  },
+  "Oracle of Mul Daya": {
+    "filepath": "Data/Game/Oracle of Mul Daya.jpg",
+    "name": "Oracle of Mul Daya"
+  },
+  "Path to Exile": {
+    "filepath": "Data/Game/Path to Exile.jpg",
+    "name": "Path to Exile"
+  },
+  "Pull from Tomorrow": {
+    "filepath": "Data/Game/Pull from Tomorrow.jpg",
+    "name": "Pull from Tomorrow"
+  },
+  "Rampaging Baloths": {
+    "filepath": "Data/Game/Rampaging Baloths.jpg",
+    "name": "Rampaging Baloths"
+  },
+  "Relinquary Tower": {
+    "filepath": "Data/Game/Relinquary Tower.jpg",
+    "name": "Relinquary Tower"
+  },
+  "Rhystic Study": {
+    "filepath": "Data/Game/Rhystic Study.jpg",
+    "name": "Rhystic Study"
+  },
+  "Rograkh, Son of Rohgahh": {
+    "filepath": "Data/Game/Rograkh, Son of Rohgahh.jpg",
+    "name": "Rograkh, Son of Rohgahh"
+  },
+  "Ruby Daring Tracker": {
+    "filepath": "Data/Game/Ruby Daring Tracker.jpg",
+    "name": "Ruby Daring Tracker"
+  },
+  "Scute Swarm": {
+    "filepath": "Data/Game/Scute Swarm.jpg",
+    "name": "Scute Swarm"
+  },
+  "shitty_coast": {
+    "filepath": "Data/Game/shitty_coast.png",
+    "name": "shitty_coast"
+  },
+  "Skullclamp": {
+    "filepath": "Data/Game/Skullclamp.jpg",
+    "name": "Skullclamp"
+  },
+  "Sol Ring": {
+    "filepath": "Data/Game/Sol Ring.jpg",
+    "name": "Sol Ring"
+  },
+  "Solemn Simulacrum": {
+    "filepath": "Data/Game/Solemn Simulacrum.jpg",
+    "name": "Solemn Simulacrum"
+  },
+  "Strip Mine": {
+    "filepath": "Data/Game/Strip Mine.jpg",
+    "name": "Strip Mine"
+  },
+  "Swords to Plowshares": {
+    "filepath": "Data/Game/Swords to Plowshares.jpg",
+    "name": "Swords to Plowshares"
+  },
+  "Telepathy": {
+    "filepath": "Data/Game/Telepathy.jpg",
+    "name": "Telepathy"
+  },
+  "Temple Garden": {
+    "filepath": "Data/Game/Temple Garden.jpg",
+    "name": "Temple Garden"
+  },
+  "The Gitrog Monster": {
+    "filepath": "Data/Game/The Gitrog Monster.jpg",
+    "name": "The Gitrog Monster"
+  },
+  "Thespian's Stage": {
+    "filepath": "Data/Game/Thespian's Stage.jpg",
+    "name": "Thespian's Stage"
+  },
+  "Thran Dynamo": {
+    "filepath": "Data/Game/Thran Dynamo.jpg",
+    "name": "Thran Dynamo"
+  },
+  "Underworld Breach": {
+    "filepath": "Data/Game/Underworld Breach.jpg",
+    "name": "Underworld Breach"
+  },
+  "Unexpected Windfall": {
+    "filepath": "Data/Game/Unexpected Windfall.jpg",
+    "name": "Unexpected Windfall"
+  },
+  "Westvale Abbey": {
+    "filepath": "Data/Game/Westvale Abbey.jpg",
+    "name": "Westvale Abbey"
+  },
+  "Windswept Heath": {
+    "filepath": "Data/Game/Windswept Heath.jpg",
+    "name": "Windswept Heath"
+  },
+  "Wojek Investigator": {
+    "filepath": "Data/Game/Wojek Investigator.jpg",
+    "name": "Wojek Investigator"
+  },
+  "Wylie Duke Atiin Hero": {
+    "filepath": "Data/Game/Wylie Duke Atiin Hero.jpg",
+    "name": "Wylie Duke Atiin Hero"
+  },
+  "Youthful Valkyrie": {
+    "filepath": "Data/Game/Youthful Valkyrie.jpg",
+    "name": "Youthful Valkyrie"
+  },
+  "Zacama Primal Calamity": {
+    "filepath": "Data/Game/Zacama Primal Calamity.jpg",
+    "name": "Zacama Primal Calamity"
+  }
+}

@@ -69,6 +69,8 @@ class trainer:
 
         self.x = np.stack(padded_images)
         del padded_images
+        # Convert to float16 to save memory
+        self.x = self.x.astype(np.float16)
         print(f"Data shape: {self.x.shape}, Labels shape: {len(self.y)}")
         self.y = np.array(self.y, dtype=np.int32)
         y_array = np.array(self.y, dtype=np.int32)
@@ -79,7 +81,7 @@ class trainer:
         
         if (self.input_shape[0] < 96 or self.input_shape[1] < 96):
             print("Resizing images to 96x96 for MobileNetV2...")
-            self.x = tf.image.resize(self.x, [96, 96]).numpy()
+            self.x = tf.image.resize(self.x, [96, 96]).numpy().astype(np.float16)
             self.input_shape = self.x.shape[1:]
 
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
@@ -201,7 +203,7 @@ class trainer:
                             borderType=cv2.BORDER_CONSTANT, value=(0, 0, 0)
                         )
                         img = cv2.resize(img, (self.input_shape[1], self.input_shape[0]))
-                        scryfall_images.append(img.astype(np.float32))
+                        scryfall_images.append(img.astype(np.float16))
                         scryfall_labels.append(i)
                     else:
                         print(f"Warning: could not load scryfall image for {key}")
